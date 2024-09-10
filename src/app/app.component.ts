@@ -1,22 +1,16 @@
 import { Component } from '@angular/core';
-import { Firestore, collectionData, collection } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'WebMovbe';
 
-  items$: Observable<any[]>;
-
-  constructor(firestore: Firestore) {
-    const itemsCollection = collection(firestore, 'items');
-    this.items$ = collectionData(itemsCollection);
-  }
 
 }
