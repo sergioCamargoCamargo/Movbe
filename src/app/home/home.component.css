@@ -1,5 +1,5 @@
 /* src/app/home/home.component.css */
-.home-container {
+/* .home-container {
     text-align: center;
     margin-top: 50px;
   }
@@ -27,5 +27,258 @@
   
   .btn-logout:hover {
     background-color: #c82333;
-  }
+  } */
   
+
+  /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1c1c1c;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #e50914;
+}
+
+.user-info {
+  position: relative;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #1c1c1c;
+  display: none;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.user-avatar:hover + .user-dropdown,
+.user-dropdown:hover {
+  display: flex;
+}
+
+.dropdown-link {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-link:hover {
+  background-color: #e50914;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  /*background: url('hero-background.jpg') no-repeat center center/cover;*/
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.movie-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.movie-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn-play {
+  background-color: #e50914;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-play:hover {
+  background-color: #d40813;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.video-section {
+  padding: 20px;
+}
+
+/* Estilo para la grilla de videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.video-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-thumbnail {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Información de cada video dentro de la tarjeta */
+.video-info {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.video-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.btn-play {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-play:hover {
+  background-color: #d40813;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 30px;
+}
+
+.movie-card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.movie-card:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #1c1c1c;
+  padding: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  display: block;
+  margin: 5px 0;
+  color: #b3b3b3;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+

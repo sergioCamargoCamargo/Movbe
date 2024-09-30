@@ -1,0 +1,25 @@
+<div class="settings-container">
+    <h1>Configuración del Usuario</h1>
+
+    <div *ngIf="user">
+        <h3>Perfil</h3>
+        <img [src]="user.profilePictureUrl || 'default-profile.png'" alt="Foto de perfil">
+        <input type="file" (change)="onProfilePictureSelected($event)">
+        <button (click)="uploadProfilePicture()">Cambiar Foto de Perfil</button>
+
+        <h3>Videos Subidos</h3>
+        <ul>
+            <li *ngFor="let video of videos">
+                {{ video.title }}
+                <button (click)="deleteVideo(video.id, video.filePath)">Eliminar</button>
+            </li>
+        </ul>
+        <!-- <h3>Videos Subidos</h3>
+      <ul>
+        <li *ngFor="let video of videos">
+          {{ video.title }}
+          <button (click)="deleteVideo(video.id)">Eliminar</button>
+        </li>
+      </ul> -->
+    </div>
+</div>

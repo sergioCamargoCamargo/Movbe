@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AuthService } from '../services/auth.service';
+import { VideoService } from '../services/video.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,7 +14,19 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
-  constructor(private authService: AuthService, private router: Router){}
+  constructor(private videoService: VideoService, private authService: AuthService, private router: Router){}
+
+  videos: any[] = [];
+
+  ngOnInit(): void {
+    // this.videoService.getAllVideos().subscribe((videos) => {
+    //   this.videos = videos;
+    // });
+  }
+
+  playVideo(id: string): void {
+    this.router.navigate(['/video', id]);
+  }
 
   async logout() {
     await this.authService.logout();

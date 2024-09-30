@@ -1,10 +1,3 @@
-// import { Injectable } from '@angular/core';
-// import { AngularFireAuth } from '@angular/fire/compat/auth';
-// import { Router } from '@angular/router';
-// import { BehaviorSubject, Observable } from 'rxjs';
-// import { Auth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, GoogleAuthProvider } from '@angular/fire/auth';
-// import { signInWithPopup, User } from 'firebase/auth';
-
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Auth, signInWithPopup, GoogleAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, User } from '@angular/fire/auth';
