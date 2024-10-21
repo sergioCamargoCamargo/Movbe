@@ -1,0 +1,43 @@
+/* src/styles.scss */
+
+/* Importar la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #141414;
+  /* Fondo oscuro de Netflix */
+  color: #FFFFFF;
+  /* Texto principal en blanco */
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/images/background1.jpg');
+  /* Ajusta la ruta según la ubicación de la imagen */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #B3B3B3;
+
+  /* Enlaces en gris claro */
+  &:hover {
+    color: #E50914;
+    /* Rojo Netflix al pasar el cursor */
+  }
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #FFFFFF;
+  /* Titulares en blanco */
+}

@@ -1,0 +1,22 @@
+
+<!-- src/app/video/video-upload/video-upload.component.html -->
+
+<div class="upload-container">
+    <h2>Subir Video</h2>
+    <form (ngSubmit)="uploadVideo()">
+      <label for="title">Título</label>
+      <input type="text" id="title" [(ngModel)]="title" name="title" required />
+  
+      <label for="description">Descripción</label>
+      <textarea id="description" [(ngModel)]="description" name="description" required></textarea>
+  
+      <label for="file">Archivo de Video</label>
+      <input type="file" id="file" (change)="onFileSelected($event)" accept="video/*" required />
+  
+      <button type="submit">Subir</button>
+    </form>
+    <div *ngIf="uploadProgress > 0">
+      <p>Progreso: {{ uploadProgress }}%</p>
+    </div>
+  </div>
+  

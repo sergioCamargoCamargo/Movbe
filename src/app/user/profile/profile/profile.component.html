@@ -1,0 +1,27 @@
+<!-- src/app/user/profile/profile.component.html -->
+
+<div class="profile-container">
+    <app-navbar></app-navbar>
+  
+    <div class="profile-content" *ngIf="user$ | async as user">
+      <h2>Perfil de Usuario</h2>
+      <div class="profile-card">
+        <img [src]="user.photoURL || defaultPhoto" alt="User Photo" />
+        <h3>{{ user.displayName || 'Usuario' }}</h3>
+        <p>{{ user.email }}</p>
+      </div>
+  
+      <form #profileForm="ngForm" (ngSubmit)="updateProfile(displayName.value, photoURL.value)">
+        <label for="displayName">Nombre de Usuario</label>
+        <input type="text" id="displayName" name="displayName" #displayName [value]="user.displayName" required />
+  
+        <label for="photoURL">URL de la Foto</label>
+        <input type="text" id="photoURL" name="photoURL" #photoURL [value]="user.photoURL" />
+  
+        <button type="submit">Actualizar Perfil</button>
+      </form>
+    </div>
+  
+    <app-footer></app-footer>
+  </div>
+  

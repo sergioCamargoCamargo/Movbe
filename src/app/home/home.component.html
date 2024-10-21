@@ -1,0 +1,43 @@
+<!-- src/app/home/home.component.html -->
+
+<div class="home-container">
+    <app-navbar></app-navbar>
+  
+    <!-- <div class="banner">
+      <h1>Bienvenido a MOBVE</h1>
+      <p>Disfruta de tus videos favoritos y descubre nuevos contenidos.</p>
+    </div> -->
+  
+    <div class="content">
+      <section class="featured-videos">
+        <h2>Videos Destacados</h2>
+        <div class="video-grid">
+          <div class="video-card" *ngFor="let video of featuredVideos">
+            <img [src]="video.thumbnail" alt="Video Thumbnail" />
+            <h3>{{ video.title }}</h3>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Contenido principal del home -->
+  <div class="home-content">
+    <!-- Puedes agregar otros elementos aquí, como un banner o categorías -->
+
+    <!-- Agrega el VideoListComponent -->
+    <app-video-list></app-video-list>
+  </div>
+
+      <section class="recent-videos">
+        <h2>Videos Recientes</h2>
+        <div class="video-grid">
+          <div class="video-card" *ngFor="let video of recentVideos">
+            <img [src]="video.thumbnail" alt="Video Thumbnail" />
+            <h3>{{ video.title }}</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <app-footer></app-footer>
+  </div>
+  

@@ -1,0 +1,17 @@
+
+<!-- src/app/auth/verify-email/verify-email.component.html -->
+
+<div class="verify-email-container">
+    <h2>Verifica tu Correo Electrónico</h2>
+    <p>
+      Se ha enviado un enlace de verificación a <strong>{{ email }}</strong>. Por favor, revisa tu bandeja de entrada y sigue las instrucciones para completar el registro.
+    </p>
+    <p>
+      Si no has recibido el correo, puedes solicitar que se envíe nuevamente.
+    </p>
+    <button (click)="sendVerificationEmail()">Reenviar Correo de Verificación</button>
+    <p>
+      <a routerLink="/login">Volver al inicio de sesión</a>
+    </p>
+  </div>
+  

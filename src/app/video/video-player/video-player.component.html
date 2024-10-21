@@ -1,0 +1,30 @@
+<!-- src/app/video/video-player/video-player.component.html -->
+
+<div class="video-player-container" *ngIf="video">
+    <h2>{{ video.title }}</h2>
+    <video width="100%" controls>
+      <source [src]="video.url" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p>{{ video.description }}</p>
+    <div>
+      <button (click)="toggleLike(video.id)" style="display: block;">
+        {{ (isLiked(video.id) | async) ? 'Unlike' : 'Like' }}
+      </button>
+      <p>{{ video.likes }} Likes</p>
+    </div>
+    
+    <div>
+      <h3>Comentarios</h3>
+      <div *ngFor="let comment of comments">
+        <p>{{ comment.content }}</p>
+        <small>{{ comment.timestamp | date }}</small>
+      </div>
+    
+      <textarea [(ngModel)]="newComment" placeholder="Escribe un comentario..."></textarea>
+      <button (click)="addComment(video.id)">Enviar</button>
+    </div>
+    
+
+  </div>
+  

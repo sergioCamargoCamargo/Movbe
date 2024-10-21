@@ -1,0 +1,93 @@
+/* src/app/home/home.component.scss */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #141414;
+  color: #fff;
+}
+
+.banner {
+  background-image: url('/assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+
+  section {
+    margin-bottom: 2rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #E50914; /* Rojo Netflix */
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+
+      .video-card {
+        background-color: #333;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        img {
+          width: 100%;
+          height: 120px;
+          object-fit: cover;
+        }
+
+        h3 {
+          padding: 0.5rem;
+          font-size: 1rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+/* src/app/home/home.component.scss */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #141414;
+  color: #fff;
+}
+
+
+

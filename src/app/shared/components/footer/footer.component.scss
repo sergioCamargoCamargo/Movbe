@@ -1,0 +1,44 @@
+/* src/app/shared/components/footer/footer.component.scss */
+
+.footer {
+  background-color: #141414;
+  color: #B3B3B3;
+  padding: 2rem;
+  text-align: center;
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .social-media {
+      margin-bottom: 1rem;
+
+      a {
+        color: #fff;
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+
+        &:hover {
+          color: #E50914;
+        }
+      }
+    }
+
+    .footer-links {
+      margin-bottom: 1rem;
+
+      a {
+        color: #B3B3B3;
+        margin: 0 1rem;
+        &:hover {
+          color: #E50914;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #B3B3B3;
+    }
+  }
+}

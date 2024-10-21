@@ -1,0 +1,28 @@
+<!-- src/app/user/settings/settings.component.html -->
+
+<div class="settings-container">
+  <h2>Ajustes de Cuenta</h2>
+
+  <section>
+    <h3>Subir Video</h3>
+    <button class="upload-button" routerLink="/video/upload">Subir un Nuevo Video</button> <!-- Botón para ir a la pantalla de subida de videos -->
+  </section>
+
+  <section>
+    <h3>Cambiar Contraseña</h3>
+    <form #passwordForm="ngForm" (ngSubmit)="changePassword(currentPassword.value, newPassword.value)">
+      <label for="currentPassword">Contraseña Actual</label>
+      <input type="password" id="currentPassword" name="currentPassword" #currentPassword required />
+
+      <label for="newPassword">Nueva Contraseña</label>
+      <input type="password" id="newPassword" name="newPassword" #newPassword required />
+
+      <button type="submit">Actualizar Contraseña</button>
+    </form>
+  </section>
+
+  <section>
+    <h3>Eliminar Cuenta</h3>
+    <button class="delete-button" (click)="deleteAccount()">Eliminar mi Cuenta</button>
+  </section>
+</div>

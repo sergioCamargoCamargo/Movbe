@@ -1,0 +1,54 @@
+<!-- src/app/shared/components/navbar/navbar.component.html -->
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <a routerLink="/">MOBVE</a>
+    </div>
+
+    <div class="nav-links">
+      <a routerLink="/home">Inicio</a>
+      <a routerLink="/video/list">Videos</a>
+      <a routerLink="/contact">Contacto</a>
+
+      <!-- Menú del usuario -->
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/user/profile">Perfil</button>
+        <button mat-menu-item routerLink="/user/settings">Ajustes</button>
+        <button mat-menu-item (click)="logout()">Cerrar Sesión</button>
+      </mat-menu>
+    </div>
+  </div>
+</nav>
+
+
+<!-- 
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a routerLink="/">MOBVE</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar videos..." [(ngModel)]="searchTerm" />
+        <button (click)="search()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+      <div class="nav-links">
+        <a routerLink="/home">Inicio</a>
+        <a routerLink="/videos">Videos</a>
+        <a routerLink="/contact">Contacto</a>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/profile">Perfil</button>
+          <button mat-menu-item (click)="logout()">Cerrar Sesión</button>
+        </mat-menu>
+      </div>
+    </div>
+  </nav> -->
+  

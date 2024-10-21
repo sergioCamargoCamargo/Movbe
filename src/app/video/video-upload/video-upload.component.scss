@@ -1,0 +1,48 @@
+/* src/app/video/video-upload/video-upload.component.scss */
+
+.upload-container {
+  padding: 2rem;
+  color: #fff;
+
+  h2 {
+    font-size: 2.5rem;
+    color: #E50914;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    input[type="text"],
+    textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    input[type="file"] {
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: #E50914;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

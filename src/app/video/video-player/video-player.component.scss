@@ -1,0 +1,24 @@
+/* src/app/video/video-player/video-player.component.scss */
+
+.video-player-container {
+    padding: 2rem;
+    color: #fff;
+  
+    h2 {
+      font-size: 2.5rem;
+      color: #E50914;
+      margin-bottom: 1rem;
+    }
+  
+    video {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      color: #B3B3B3;
+    }
+  }
+  

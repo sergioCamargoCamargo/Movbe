@@ -1,0 +1,13 @@
+<!-- src/app/video/video-list/video-list.component.html -->
+
+<div class="video-list-container">
+    <h2>Explora nuestros videos</h2>
+    
+    <div class="video-grid">
+      <div class="video-card" *ngFor="let video of videos" (click)="playVideo(video.id)">
+        <img [src]="video.thumbnail" alt="Video Thumbnail"  />
+        <h3>{{ video.title }}</h3>
+      </div>
+    </div>
+  </div>
+  

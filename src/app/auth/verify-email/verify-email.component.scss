@@ -1,0 +1,36 @@
+/* src/app/auth/verify-email/verify-email.component.scss */
+
+.verify-email-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+  
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #1e88e5;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+  
+    a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+  }
+  
