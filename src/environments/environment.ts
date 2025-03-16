@@ -9,13 +9,13 @@ import { getAnalytics } from "firebase/analytics";
 export const environment = {
     production: false,
     firebase: {
-        apiKey: "AIzaSyCYItBjaSyE0axk7YmakH_C4M4fsSHboz8",
-        authDomain: "movbe-958d8.firebaseapp.com",
-        projectId: "movbe-958d8",
-        storageBucket: "movbe-958d8.appspot.com",
-        messagingSenderId: "908668159801",
-        appId: "1:908668159801:web:45a2f7fba53ce065578ae8",
-        measurementId: "G-B4QXKFRJLZ"
+        apiKey: "AIzaSyDQrpFlLL9piUb1cM00-tW-bY3jo-kOAcA",
+        authDomain: "movbe-95f3e.firebaseapp.com",
+        projectId: "movbe-95f3e",
+        storageBucket: "movbe-95f3e.firebasestorage.app",
+        messagingSenderId: "982525032663",
+        appId: "1:982525032663:web:103d9c0bed40b2d37b9892",
+        measurementId: "G-B0MPBVQJM7"
     }
 };
 
